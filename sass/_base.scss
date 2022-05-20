@@ -5,6 +5,20 @@
 #FCBAFF
 #FFFFD2
 */
+
+/* --- 01 TYPOGRAPHY SYSTEM
+
+ - Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74  / 86 / 98
+
+ - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+ */
+
+
+
 //colors:
 $color-blue:#A8D8EA;
 
@@ -13,10 +27,11 @@ $color-purple-light:#FCBAFF;
 
 $color-pink:#FCBAD3;
 $color-yellow:#FFFFD2;
-$color-white:#fff;
+
 
 $color-grey-dark:#777;
-$color-black:#000;
+$font-color-dark:#160815;
+$font-color-primary:#2A2A2A;
 
 //font-size
 $default-font-size:1.6rem;
@@ -64,3 +79,15 @@ body {
     color: $color-grey-dark;
 }
 
+// typography
+strong{
+    font-weight: 800;
+}
+
+ .heading-primary{
+     font-size: 6.2rem;
+     line-height: 1.5;
+     letter-spacing: 0px;
+     color: #fff;
+     font-weight: 700;
+ }

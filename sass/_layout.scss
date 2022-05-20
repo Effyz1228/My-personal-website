@@ -13,11 +13,50 @@
 
 //****************
 //header:
+.section__hero{
+    z-index: 9999;
+    position: relative;
+}
 
+.hero{
+    padding: 8rem 9.6rem;
+    background-color: $color-blue;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    justify-content: center;
+    align-content: center;
+    
 
+    &__text-box{
+        align-self: start;
+        grid-column: 1/4;
+        padding-top: 
+        3.2rem;
+    }
+
+    &__img-box{
+        // max-width: 55rem;
+        grid-column: 4/-1;
+        margin-bottom: 8rem;
+        align-self: center;
+        
+    }
+    &__img{
+       width: 110%;
+    }
+}
+
+//Section about:
 .section-about{
-    
-    
+    position: relative;
+    clip-path: polygon(100% 0, 100% 78%, 62% 100%, 0 83%, 0 0);
+    background-color: $color-pink;
+    margin-top: -9rem;
+    z-index: 5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 9.6rem;
 }
 
 .section-skills{

@@ -5,6 +5,16 @@
 #FCBAFF
 #FFFFD2
 */
+/* --- 01 TYPOGRAPHY SYSTEM
+
+ - Font sizes (px)
+ 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74  / 86 / 98
+
+ - Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+
+ */
 .u-center-class {
   text-align: center !important;
 }
@@ -48,6 +58,18 @@ body {
   font-weight: 400;
   line-height: 1.6;
   color: #777;
+}
+
+strong {
+  font-weight: 800;
+}
+
+.heading-primary {
+  font-size: 6.2rem;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .nav__menu {
@@ -137,7 +159,6 @@ body {
   list-style: none;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  color: white;
   padding: 2rem 0;
 }
 
@@ -153,7 +174,7 @@ body {
 }
 
 .nav__list__link {
-  color: white;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -167,14 +188,60 @@ body {
   height: 8rem;
 }
 
-.header {
-  background-color: #A8D8EA;
-  -webkit-clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
-          clip-path: polygon(100% 0, 100% 85%, 0 100%, 0 0);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 20rem 15rem;
+.section__hero {
+  z-index: 9999;
   position: relative;
+}
+
+.hero {
+  padding: 8rem 9.6rem;
+  background-color: #A8D8EA;
+  -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+          clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.hero__text-box {
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-column: 1/4;
+  padding-top: 3.2rem;
+}
+
+.hero__img-box {
+  grid-column: 4/-1;
+  margin-bottom: 8rem;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.hero__img {
+  width: 110%;
+}
+
+.section-about {
+  position: relative;
+  -webkit-clip-path: polygon(100% 0, 100% 78%, 62% 100%, 0 83%, 0 0);
+          clip-path: polygon(100% 0, 100% 78%, 62% 100%, 0 83%, 0 0);
+  background-color: #FCBAD3;
+  margin-top: -9rem;
+  z-index: 5;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  padding: 9.6rem;
 }
 /*# sourceMappingURL=main.css.map */

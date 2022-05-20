@@ -80,7 +80,7 @@
     align-items: center;
     list-style: none;
     justify-content: space-around;
-    color: white;
+    
     padding: 2rem 0;
 
     @media (max-width: 992px) {
@@ -93,9 +93,11 @@
     }
 
     &__link{
-        color: white;
+        color: #fff;
         text-decoration: none;
     }
 }
+
+
 
 
