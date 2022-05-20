@@ -16,34 +16,34 @@
 .section__hero{
     z-index: 9999;
     position: relative;
+    background-color: $color-blue;
+    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
+    padding: 4.8rem;
 }
 
 .hero{
-    padding: 8rem 9.6rem;
-    background-color: $color-blue;
-    clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
-    display: grid;
-    grid-template-columns: repeat(5,1fr);
+    max-width: 130rem;
+    margin: 0 auto;
+    display: flex;
     justify-content: center;
-    align-content: center;
-    
+    align-items: center;
+    padding: 0 4.8rem;
 
     &__text-box{
-        align-self: start;
-        grid-column: 1/4;
-        padding-top: 
-        3.2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1;
+        
     }
 
     &__img-box{
-        // max-width: 55rem;
-        grid-column: 4/-1;
-        margin-bottom: 8rem;
-        align-self: center;
+        flex: 0 0 50%;
+        padding: 3.2rem 0 9.6rem 0;
         
     }
     &__img{
-       width: 110%;
+        width: 100%;
     }
 }
 
@@ -52,11 +52,37 @@
     position: relative;
     clip-path: polygon(100% 0, 100% 78%, 62% 100%, 0 83%, 0 0);
     background-color: $color-pink;
-    margin-top: -9rem;
+    margin-top: -13rem;
     z-index: 5;
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    padding: 9.6rem;
+    display: flex;
+    height: 100vh;
+
+   
+
+    &__left{
+        flex: 0 0 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    &__img-box{}
+    &__avartar{
+        border-radius: 50%;
+    }
+    &__right{
+        flex: 0 0 1;
+        align-self: center;
+        justify-content: center;
+    }
+    &__paragraph{
+        width: 80%;
+        color: $font-color-primary;
+        font-size: 1.8rem;
+        line-height: 1.8;
+        font-weight: 500;
+        
+    }
 }
 
 .section-skills{
