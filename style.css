@@ -1,0 +1,111 @@
+/*
+#A8D8EA
+#AA96DA
+#FCBAD3
+#FCBAFF
+#FFFFD2
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  margin: 3rem;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777; }
+
+.heading-primary {
+  color: #fff;
+  margin-top: 6rem; }
+  .heading-primary-main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 900;
+    letter-spacing: 1rem; }
+  .heading-primary-sub {
+    display: block;
+    font-size: 5rem;
+    font-weight: 700;
+    letter-spacing: .74rem; }
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 3.5rem;
+  text-transform: uppercase;
+  display: inline-block;
+  color: #AA96DA;
+  transition: all .2s;
+  letter-spacing: .2rem; }
+  .heading-secondary:hover {
+    transform: skewY(-2deg) skewX(-15deg) scale(1.1);
+    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.paragraph {
+  font-size: 2rem;
+  font-weight: 700;
+  display: block; }
+  .paragraph:not(:last-child) {
+    margin-bottom: 3rem; }
+
+.u-center-class {
+  text-align: center !important; }
+
+.margin-bottom-small {
+  margin-bottom: 1.5rem !important; }
+
+.margin-bottom-medium {
+  margin-bottom: 4rem !important; }
+
+.margin-bottom-big {
+  margin-bottom: 8rem !important; }
+
+.margin-top-big {
+  margin-top: 15rem !important; }
+
+.about__avartar {
+  border-radius: 50%; }
+
+.about__text {
+  padding-top: 10rem; }
+
+.section-about {
+  background-color: #FCBAD3;
+  margin-top: -20vh;
+  padding: 20rem 0; }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  max-width: 114rem;
+  justify-content: space-evenly;
+  margin: 0 20rem; }
+  .row .col-1-of-2 {
+    flex: 1; }
+
+.header {
+  background-color: #A8D8EA;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+  height: 70vh;
+  background-size: cover;
+  position: relative; }
+  .header__img-box {
+    position: absolute;
+    top: 0rem;
+    right: 20rem;
+    width: 30%;
+    margin: 10rem; }
+  .header__text-box {
+    position: absolute;
+    top: 10rem;
+    left: 20rem;
+    width: 60%;
+    color: #fff; }

@@ -1,0 +1,101 @@
+//****************
+//Navigation:
+//hamburger-menu
+.nav__menu{
+    position: relative;
+    
+    
+    &__checkbox{
+        display: none;
+    }
+    &__checkbox:checked + &__button &__icon{
+        height: 0;
+    }
+    &__checkbox:checked + &__button &__icon::before{
+        top: 0;
+        transform: rotate(135deg);
+    }
+    &__checkbox:checked + &__button &__icon::after{
+        top: 0;
+        transform: rotate(-135deg);
+    }
+
+
+
+    &__button{
+        position: fixed;
+        z-index: 999;
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+        background-color:#AA96DA;
+        top: 1rem;
+        right: 2rem;
+        
+
+        &:hover{
+            cursor: pointer;
+        }
+
+        @media (min-width: 992px) {
+            display: none;
+        }
+    }
+    &__icon{
+        position: absolute;
+        width: 3rem;
+        height: 2px;
+        top: 3.5rem;
+        left: 2rem;
+        display: block;
+        background: #fff;
+        border-radius: 4px;
+
+        &::before,
+        &::after{
+            content: "";
+            width: 3rem;
+            height: 2px;
+            display: block;
+            background: #fff;
+            border-radius: 4px;
+            transition: all .2s;
+        }
+
+        &::before{
+            position: absolute;
+            top: -1.5rem;
+        }
+
+        &::after{
+            position: absolute;
+            top: 1.5rem;
+        }
+    }
+}
+
+//nav-bar
+.nav__list{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+    color: white;
+    padding: 2rem 0;
+
+    @media (max-width: 992px) {
+        display: none;
+    }
+
+    &__item{
+    font-size: 2.5rem;
+        font-weight: 600;
+    }
+
+    &__link{
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
