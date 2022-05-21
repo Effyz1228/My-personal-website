@@ -40,9 +40,12 @@ $default-font-size:1.6rem;
 .u-center-class{
     text-align: center !important;
 }
+.margin-bottom-tiny{
+    margin-bottom: 1rem !important;
+}
 
 .margin-bottom-small{
-    margin-bottom: 1.5rem !important;
+    margin-bottom: 1.6rem !important;
 }
 .margin-bottom-medium{
     margin-bottom: 4rem !important;
@@ -120,7 +123,6 @@ strong{
     color: #333;
     font-size: 4.4rem;
     line-height: 1.2;
-    margin-bottom: 1.6rem;
  }
 
  .sub-heading{
@@ -128,3 +130,18 @@ strong{
      font-size: 2.4rem;
      font-weight: 500;
  }
+
+ .sub-heading-small{
+    color: #555;
+    font-size: 2.2rem;
+
+ }
+
+ //margin and white space
+ .container{
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+    
+ }
+

@@ -106,8 +106,21 @@
 }
 
 .section-skills{
+    margin-top: -21rem;
+    background-color: $color-yellow;
     
-    
+    &__wrapper{
+        padding-top: 23rem;
+        padding-bottom: 9.6rem;
+    }
+
+
+    &__icon-container{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        row-gap: 3.2rem;
+        margin: 4.8rem 0;
+    }
 }
 
 .section-projects{}

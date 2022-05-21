@@ -19,8 +19,12 @@
   text-align: center !important;
 }
 
+.margin-bottom-tiny {
+  margin-bottom: 1rem !important;
+}
+
 .margin-bottom-small {
-  margin-bottom: 1.5rem !important;
+  margin-bottom: 1.6rem !important;
 }
 
 .margin-bottom-medium {
@@ -101,13 +105,23 @@ strong {
   color: #333;
   font-size: 4.4rem;
   line-height: 1.2;
-  margin-bottom: 1.6rem;
 }
 
 .sub-heading {
   color: #444;
   font-size: 2.4rem;
   font-weight: 500;
+}
+
+.sub-heading-small {
+  color: #555;
+  font-size: 2.2rem;
+}
+
+.container {
+  max-width: 120rem;
+  margin: 0 auto;
+  padding: 0 3.2rem;
 }
 
 .nav__menu {
@@ -214,6 +228,22 @@ strong {
 .nav__list__link {
   color: #fff;
   text-decoration: none;
+}
+
+.icon {
+  height: 4.8rem;
+  width: 4.8rem;
+}
+
+.icon-box {
+  text-align: center;
+}
+
+.icon-box p {
+  padding-top: 1.2rem;
+  color: #666;
+  font-size: 1.8rem;
+  font-weight: 500;
 }
 
 .nav__container {
@@ -356,5 +386,24 @@ strong {
 
 .section-about__paragraph:not(:last-child) {
   margin-bottom: 3.2rem;
+}
+
+.section-skills {
+  margin-top: -21rem;
+  background-color: #FFFFD2;
+}
+
+.section-skills__wrapper {
+  padding-top: 23rem;
+  padding-bottom: 9.6rem;
+}
+
+.section-skills__icon-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  row-gap: 3.2rem;
+  margin: 4.8rem 0;
 }
 /*# sourceMappingURL=main.css.map */
