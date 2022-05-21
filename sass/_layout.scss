@@ -14,7 +14,7 @@
 //****************
 //header:
 .section__hero{
-    z-index: 9999;
+    z-index: 99;
     position: relative;
     background-color: $color-blue;
     clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
@@ -33,15 +33,14 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        flex: 1;
-        
+        flex: 1;    
     }
 
     &__img-box{
         flex: 0 0 50%;
-        padding: 3.2rem 0 9.6rem 0;
-        
+        padding: 3.2rem 0 9.6rem 0;     
     }
+
     &__img{
         width: 100%;
     }
@@ -53,35 +52,56 @@
     clip-path: polygon(100% 0, 100% 78%, 62% 100%, 0 83%, 0 0);
     background-color: $color-pink;
     margin-top: -13rem;
-    z-index: 5;
-    display: flex;
-    height: 100vh;
-
-   
+    z-index: 88;
+    
+    &__container{
+        max-width: 120rem;
+        margin: 0 auto;
+        padding: 0 3.2rem;
+        padding-top: 23rem;
+        padding-bottom: 13rem;
+        display: flex;
+        gap: 4.8rem;
+        justify-content: center;
+        align-items: center;
+    }
 
     &__left{
-        flex: 0 0 50%;
+        flex: 0 0 40%;
         display: flex;
         flex-direction: column;
-        align-items: center;
         justify-content: center;
+        align-items: center;
+        max-width: 35rem;
     }
-    &__img-box{}
+
+    &__img-box{
+        
+    }
     &__avartar{
         border-radius: 50%;
+        height: 30rem;
+        width: 30rem;
+        display: block;
     }
+
     &__right{
-        flex: 0 0 1;
-        align-self: center;
+        padding: 3.2rem;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
         justify-content: center;
+       
     }
     &__paragraph{
-        width: 80%;
-        color: $font-color-primary;
-        font-size: 1.8rem;
+        color: #555;
+        font-size: 2rem;
         line-height: 1.8;
-        font-weight: 500;
-        
+        //font-weight: 500;
+    }
+
+    &__paragraph:not(:last-child){
+        margin-bottom: 3.2rem;
     }
 }
 

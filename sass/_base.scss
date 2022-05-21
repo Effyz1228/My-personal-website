@@ -79,6 +79,30 @@ body {
     color: $color-grey-dark;
 }
 
+
+//buttons
+.btn,
+.btn:link,
+.btn:visited{
+    width: 18.4rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1.6rem 3.2rem;
+    display: inline-block;
+    border-radius: 9px;
+    border: 1px solid #555;  
+    color: #333;
+    transition: all 0.2s;
+}
+
+.btn:hover,
+.btn:active{
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,.075);
+    transform: translateY(-2px);
+    color: #444;
+}
+
 // typography
 strong{
     font-weight: 800;
@@ -90,4 +114,17 @@ strong{
      letter-spacing: -.5px;
      color: #fff;
      font-weight: 700;   
+ }
+
+ .heading-secondary{
+    color: #333;
+    font-size: 4.4rem;
+    line-height: 1.2;
+    margin-bottom: 1.6rem;
+ }
+
+ .sub-heading{
+     color: #444;
+     font-size: 2.4rem;
+     font-weight: 500;
  }
