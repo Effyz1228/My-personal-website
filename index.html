@@ -228,33 +228,38 @@
             </div>
         </section>
 
-        <section class="section-contact">
-            <div class="contact__textbox">
-                <h3>Contact</h3>
-                <h2>Get in touch</h2>
-                <div class="contact_content">
-                    <div class="contact__form">
-                        <p>#nbsp;</p>
-                        <form action="https://formspree.io/f/xgednjkv" method="post">
-                            <div class="form__name">
-                                <input type="text" required name="name" id="name" placeholder="Fullname">
-                                <label for="name" class="form__label-name">name</label>
-                            </div>
-                            <div class="form__email">
-                                <input type="email" required name="email" id="email" placeholder="Email address">
-                                <label for="email" class="form__label-email">Email</label>
-                            </div>
-                            <div class="form__message">
-                                <input type="text" required name="message" id="message" placeholder="message">
-                                <label for="message" class="form__label-message">message</label>
-                            </div>
-                            <button class="form__button" value="send">send</button>
-                            
-                            
-                        </form>
+        <section class="section-contact" id="contact">
+            <div class="container">
+                <div class="contact">
+                <div class="contact-text-box">
+                    <h2 class="heading-secondary margin-bottom-tiny">Get in touch!</h2>
+                    <p class="contact-text margin-bottom-tiny">
+                        Dropping a line to say g’day, ask for my resume or see if we can build something amazing together? I’d love to hear from you!
+                    </p>
+                    <p class="contact-text margin-bottom-small">
+                        Fill in your info in the form below and I look forward to hearing from you!
+                    </p>
+                    <form 
+                   class="contact-form" name="contact-form" netlify>
+                    <div>
+                        <label for="name">Full Name</label>
+                        <input name="fullname" type="text" class="name" id="name" placeholder="fullname" required>
                     </div>
-                    
-
+                    <div>
+                        <label for="email">Email address</label>
+                        <input name="email" type="email" class="email" id="email" placeholder="yourname@email.com" required>
+                    </div>
+                    <div>
+                        <label for="message">What's on your mind?</label>
+                        <input type="textbox" name="contact-message" type="text" class="message" id="message" placeholder="Leave some message" required >
+                    </div>
+    
+                    <button class="btn contact-button" >Sign up now</button>
+                    </form>
+                </div>
+                
+    
+                <div class="contact-img-box" role="image" aria-label="A woman enjoy food"></div>
                 </div>
             </div>
         </section>
