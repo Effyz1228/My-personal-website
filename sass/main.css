@@ -450,7 +450,7 @@ strong {
 }
 
 .section-contact {
-  background-color: #ffffd7;
+  background-color: #fffff2;
   padding: 12.6rem 0;
 }
 
@@ -460,17 +460,112 @@ strong {
   -ms-grid-columns: (1fr)[2];
       grid-template-columns: repeat(2, 1fr);
   gap: 2.4rem;
+  border-radius: 11px;
+  -webkit-box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  overflow: hidden;
+  background-color: #ffffd7;
+  margin: 4.8rem;
+}
+
+.contact-text-box {
+  padding: 3.2rem;
 }
 
 .contact-text {
   color: #555;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 1.8rem;
   line-height: 1.4;
 }
 
+.contact-form {
+  margin-top: 4.8rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.2rem;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  padding-left: 1.2rem;
+  color: #444;
+}
+
+.contact-form input {
+  border: none;
+  font-family: inherit;
+  padding: 1.2rem;
+  border-radius: 9px;
+  -webkit-box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  font-size: 1.8rem;
+  background-color: #fff;
+  width: 100%;
+  position: relative;
+}
+
+.contact-form input::-webkit-input-placeholder {
+  top: 1.2rem;
+  left: 1.2rem;
+  position: absolute;
+  color: #555;
+}
+
+.contact-form input:-ms-input-placeholder {
+  top: 1.2rem;
+  left: 1.2rem;
+  position: absolute;
+  color: #555;
+}
+
+.contact-form input::-ms-input-placeholder {
+  top: 1.2rem;
+  left: 1.2rem;
+  position: absolute;
+  color: #555;
+}
+
+.contact-form input::placeholder {
+  top: 1.2rem;
+  left: 1.2rem;
+  position: absolute;
+  color: #555;
+}
+
+.contact-form .message {
+  height: 15rem;
+}
+
 .contact-button {
   background: none;
-  margin-top: 4.8rem;
+  margin-top: 2.4rem;
+}
+
+.contact-img-box {
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 224, 0.3)), to(rgba(255, 255, 210, 0.338))), url(/img/outdoor.avif);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 224, 0.3), rgba(255, 255, 210, 0.338)), url(/img/outdoor.avif);
+  background-size: cover;
+  background-position: center;
+}
+
+footer {
+  background-color: #FCBAD3;
+}
+
+footer p {
+  font-size: 1.4rem;
+  text-align: center;
+  padding: 4.8rem;
+  color: #555;
+  letter-spacing: 1.2px;
 }
 /*# sourceMappingURL=main.css.map */

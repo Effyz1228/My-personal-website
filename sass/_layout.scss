@@ -174,7 +174,7 @@ padding-bottom: 4.8rem;
 
 
 .section-contact{
-    background-color: #ffffd7;
+    background-color: #fffff2;
     padding: 12.6rem 0; 
 }
 
@@ -182,24 +182,84 @@ padding-bottom: 4.8rem;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 2.4rem;
+    border-radius: 11px;
+    box-shadow: 0 2.4rem 4.8rem rgba(0,0,0,.15);
+    overflow: hidden;
+    background-color: #ffffd7;
+    margin: 4.8rem;
 
         &-text-box{
-
+            padding: 3.2rem;
         }
 
     &-text{
     color: #555;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.8rem;
     line-height: 1.4;
     }
 
     &-form{
-        
+        margin-top: 4.8rem;
+        display: flex;
+        flex-direction: column;
+        gap:1.2rem;
+
+        // justify-content: center;
+
+        label{
+            display: block;
+            margin-bottom: 1.2rem;
+            font-size: 1.6rem;
+            font-weight: 500;  
+            padding-left: 1.2rem;
+            color: #444;
+            
+        }
+        input{
+            border: none;
+            font-family: inherit;
+            
+            padding: 1.2rem;
+            border-radius: 9px;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+            font-size: 1.8rem;
+            background-color: #fff;
+            width: 100%;
+            position: relative;
+
+            &::placeholder{
+                top: 1.2rem;
+                left: 1.2rem;
+                position: absolute;
+                color:#555;
+            }
+        }
+        .message{
+            height: 15rem;
+        }
     }
 
     &-button{
         background: none;
-        margin-top: 4.8rem;
+        margin-top: 2.4rem;
     }
+
+    &-img-box{
+        background-image: linear-gradient(to right bottom, rgba(255, 255, 224, 0.3), rgba(255, 255, 210, 0.338)),url(/img/outdoor.avif);
+    background-size: cover;
+    background-position: center;  
+    }
+}
+
+footer{
+    background-color: $color-pink;
+
+    p{
+        font-size: 1.4rem;
+        text-align: center;
+        padding: 4.8rem;
+        color: #555;
+        letter-spacing: 1.2px;
+        }
 }
