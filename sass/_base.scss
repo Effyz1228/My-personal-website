@@ -87,12 +87,12 @@ body {
 .btn,
 .btn:link,
 .btn:visited{
-    width: 18.4rem;
+    display: inline-block;
     text-decoration: none;
     font-size: 2rem;
     font-weight: 600;
     padding: 1.6rem 3.2rem;
-    display: inline-block;
+    align-self: start;
     border-radius: 9px;
     border: 1px solid #555;  
     color: #333;

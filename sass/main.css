@@ -67,12 +67,14 @@ body {
 .btn,
 .btn:link,
 .btn:visited {
-  width: 18.4rem;
+  display: inline-block;
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
   padding: 1.6rem 3.2rem;
-  display: inline-block;
+  -ms-flex-item-align: start;
+      -ms-grid-row-align: start;
+      align-self: start;
   border-radius: 9px;
   border: 1px solid #555;
   color: #333;
@@ -394,8 +396,8 @@ strong {
 }
 
 .section-skills__wrapper {
-  padding-top: 23rem;
-  padding-bottom: 9.6rem;
+  padding-top: 26rem;
+  padding-bottom: 12.8rem;
 }
 
 .section-skills__icon-container {
