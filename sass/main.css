@@ -250,12 +250,12 @@ strong {
 
 .nav__container {
   background-color: #AA96DA;
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
-  left: 0;
-  z-index: 100;
+  bottom: 0;
+  z-index: 999;
   height: 8rem;
+  width: 100%;
 }
 
 .section__hero {
@@ -551,8 +551,8 @@ strong {
 }
 
 .contact-img-box {
-  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 224, 0.3)), to(rgba(255, 255, 210, 0.338))), url(/img/outdoor.avif);
-  background-image: linear-gradient(to right bottom, rgba(255, 255, 224, 0.3), rgba(255, 255, 210, 0.338)), url(/img/outdoor.avif);
+  background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(255, 255, 224, 0.3)), to(rgba(255, 255, 210, 0.338))), url(img/outdoor.avif);
+  background-image: linear-gradient(to right bottom, rgba(255, 255, 224, 0.3), rgba(255, 255, 210, 0.338)), url(img/outdoor.avif);
   background-size: cover;
   background-position: center;
 }
