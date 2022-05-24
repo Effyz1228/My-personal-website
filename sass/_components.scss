@@ -1,77 +1,41 @@
 //****************
 //Navigation:
 //hamburger-menu
-.nav__menu{
-    position: relative;
-    
-    
-    &__checkbox{
-        display: none;
-    }
-    &__checkbox:checked + &__button &__icon{
-        height: 0;
-    }
-    &__checkbox:checked + &__button &__icon::before{
-        top: 0;
-        transform: rotate(135deg);
-    }
-    &__checkbox:checked + &__button &__icon::after{
-        top: 0;
-        transform: rotate(-135deg);
-    }
+.btn-mobile-nav{
+    border: none;
+    background: $color-purple;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 6.5rem;
+    width: 6.5rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-50%,50%);
+    display: none;
+}
 
+.sticky .header{
+    position: fixed;
+    height: 8rem;
+    width: 100%;
+    padding-top: 0;
+    padding-bottom: 0;
+    z-index: 99999;
+    background-color: rgba($color-purple,0.97);
+}
 
+.sticky .section__hero{
+    padding-top:12.8rem ;
+}
 
-    &__button{
-        position: fixed;
-        z-index: 999;
-        height: 7rem;
-        width: 7rem;
-        border-radius: 50%;
-        background-color:#AA96DA;
-        top: 1rem;
-        right: 2rem;
-        
-
-        &:hover{
-            cursor: pointer;
-        }
-
-        @media (min-width: 992px) {
-            display: none;
-        }
-    }
-    &__icon{
-        position: absolute;
-        width: 3rem;
-        height: 2px;
-        top: 3.5rem;
-        left: 2rem;
-        display: block;
-        background: #fff;
-        border-radius: 4px;
-
-        &::before,
-        &::after{
-            content: "";
-            width: 3rem;
-            height: 2px;
-            display: block;
-            background: #fff;
-            border-radius: 4px;
-            transition: all .2s;
-        }
-
-        &::before{
-            position: absolute;
-            top: -1.5rem;
-        }
-
-        &::after{
-            position: absolute;
-            top: 1.5rem;
-        }
-    }
+.icon-mobile-nav{
+    color: #fff;
+    height: 4.8rem;
+    width: 4.8rem;
+}
+.icon-mobile-nav[name="close-outline"]{
+    display: none;
 }
 
 //nav-bar
@@ -83,18 +47,12 @@
     
     padding: 2rem 0;
 
-    @media (max-width: 992px) {
-        display: none;
-    }
-
-    &__item{
-    font-size: 2.5rem;
-        font-weight: 600;
-    }
-
-    &__link{
+    &__link:link,
+    &__link:visited{
         color: #fff;
         text-decoration: none;
+        font-size: 2.5rem;
+        font-weight: 600;
     }
 }
 

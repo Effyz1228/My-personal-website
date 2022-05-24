@@ -14,21 +14,20 @@
     <title>EffyZhang</title>    
 </head>
 <body>
-    <header class="header">
+    <header class="header">       
+        <button class="btn-mobile-nav">
+            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+        </button>
+
         <nav class="nav__container">
-            <div class="nav__menu">
-                <input type="checkbox" class="nav__menu__checkbox" id="nav-toggle">
-                <label for="nav-toggle" class="nav__menu__button">
-                    <span class="nav__menu__icon">&nbsp;</span>
-                </label>
-            </div>
             <ul class="nav__list">
-                <li class="nav__list__item"><a href="#" class="nav__list__link" aria-label="visit home page">Home</a></li>
-                <li class="nav__list__item"><a href="#" class="nav__list__link" aria-label="visit about page">About</a></li>
-                <li class="nav__list__item"><a href="#" class="nav__list__link" aria-label="visit skills page">Skills</a></li>
-                <li class="nav__list__item"><a href="#" class="nav__list__link" aria-label="visit projects page">Projects</a></li>
-                <li class="nav__list__item"><a href="#" class="nav__list__link" aria-label="visit blog page">Blog</a></li>
-                <li class="nav__list__item"><a href="#" class="nav__list__link" aria-label="visit contact page">Contact</a></li>
+                <li><a href="#" class="nav__list__link" aria-label="visit home page">Home</a></li>
+                <li><a href="#about" class="nav__list__link" aria-label="visit about page">About</a></li>
+                <li><a href="#skills" class="nav__list__link" aria-label="visit skills page">Skills</a></li>
+                <li><a href="#projects" class="nav__list__link" aria-label="visit projects page">Projects</a></li>
+                <li><a href="#" class="nav__list__link" aria-label="visit blog page">Blog</a></li>
+                <li><a href="#contact" class="nav__list__link" aria-label="visit contact page">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -47,7 +46,7 @@
             </div>
         </section>
 
-        <section class="section-about">
+        <section class="section-about" id="about">
             <div class="section-about__container">
                 <div class="section-about__left">
                     <h2 class="heading-secondary margin-bottom-small">About me</h2>
@@ -74,7 +73,7 @@
             </div>
             </section>
 
-        <section class="section-skills">
+        <section class="section-skills" id="skills">
         <div class="container">
                 <div class="section-skills__wrapper">
                 <h2 class="heading-secondary margin-bottom-tiny">Skills & tools</h2>
@@ -160,7 +159,7 @@
         </div>
         </section>
 
-        <section class="section-projects">
+        <section class="section-projects" id="projects">
             <div class="projects__wrapper container">
                 <h2 class="heading-secondary margin-bottom-tiny">projects</h2>
                 <p class="sub-heading-small margin-bottom-small">Some selection of projects I built:</p>
@@ -254,7 +253,7 @@
                         <input type="textbox" name="contact-message" type="text" class="message" id="message" placeholder="Leave me some message" required >
                     </div>
     
-                    <button class="btn contact-button" >Contact now</button>
+                    <button class="btn contact-button" >Say hi!</button>
                     </form>
                 </div>
                 <div class="contact-img-box" role="image" aria-label="A woman enjoy food"></div>
@@ -263,8 +262,12 @@
         </section>
     </main>
     <footer>
-        <p class="footer">&reg;2022 | Designed & coded with ♥️ by Effy Zhang</p>
+        <p class="footer">Copyright &copy; <span class="year">3000</span> | Designed & coded with ♥️ by Effy Zhang</p>
     </footer>
 
+    <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

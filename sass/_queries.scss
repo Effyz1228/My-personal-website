@@ -1,0 +1,83 @@
+/* rem and em don't work on html font-size in media queries! 
+Instead 1rem =1em =16px */
+
+
+/* ******************************** */
+/* Below 1344px (small desktops) */
+/* ******************************** */
+@media (max-width:84em){}
+
+/* ******************************** */
+/* Below 1200px (landscape tablets) */
+/* ******************************** */
+@media (max-width:75em){}
+/* ******************************** */
+/* Below 944px (tablets) */
+/* ******************************** */
+@media (max-width:59em){
+
+    /* mobile nav */
+    .btn-mobile-nav{
+        display: block;
+        z-index: 9999;
+    }
+    .header{
+        height: 0;
+    }
+    .sticky .header{
+        background-color: transparent;
+    }
+    .nav__container{
+        position: absolute;
+        background-color: rgba($color-purple,0.97);
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100%;
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        transform: translateX(100%);
+        transition: all .2s ease-in;
+
+        /* hide a property correctly */
+        /* step1 */
+        opacity: 0;
+        /* step2 */
+        pointer-events: none;
+        /* step3 */
+        visibility: hidden;
+        
+    }
+
+    .nav-open .nav__container{
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        
+        transform: translateX(0);
+    }
+
+    .nav-open .icon-mobile-nav[name="close-outline"]{
+        display: block;
+    }
+
+    .nav-open .icon-mobile-nav[name="menu-outline"]{
+        display: none;
+    }
+
+    .nav__list{
+        flex-direction: column;
+        gap: 4.8rem;
+        color: #fff;
+    }
+
+    .nav__list__link:link,
+    .nav__list__link:visited{
+        font-size: 3rem;
+        color: #fff;
+}
+
+}
