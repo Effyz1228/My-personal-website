@@ -1,277 +1,424 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <link rel="stylesheet" href="sass/main.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon_io/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="sass/main.css" />
 
-    <title>EffyZhang</title>    
-</head>
-<body>
-    <header class="header">       
-        <button class="btn-mobile-nav">
-            <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
-            <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
-        </button>
+    <title>EffyZhang</title>
+  </head>
+  <body>
+    <header class="header">
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
 
-        <nav class="nav__container">
-            <ul class="nav__list">
-                <li><a href="#" class="nav__list__link" aria-label="visit home page">Home</a></li>
-                <li><a href="#about" class="nav__list__link" aria-label="visit about page">About</a></li>
-                <li><a href="#skills" class="nav__list__link" aria-label="visit skills page">Skills</a></li>
-                <li><a href="#projects" class="nav__list__link" aria-label="visit projects page">Projects</a></li>
-                <li><a href="#" class="nav__list__link" aria-label="visit blog page">Blog</a></li>
-                <li><a href="#contact" class="nav__list__link" aria-label="visit contact page">Contact</a></li>
-            </ul>
-        </nav>
+      <nav class="nav__container">
+        <ul class="nav__list">
+          <li>
+            <a href="#" class="nav__list__link" aria-label="visit home page"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="#about"
+              class="nav__list__link"
+              aria-label="visit about page"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="nav__list__link"
+              aria-label="visit skills page"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="nav__list__link"
+              aria-label="visit projects page"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a href="#" class="nav__list__link" aria-label="visit blog page"
+              >Blog</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="nav__list__link"
+              aria-label="visit contact page"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <main>
-        <section class="section__hero">
-            <div class="hero">               
-                <div class="hero__text-box">
-                    <h1 class="heading-primary">Hello,I'm Effy!</h1>
-                        <h1 class="heading-primary"><strong> A Web developer</strong></h1>
-                        <h1 class="heading-primary">I love building things!</h1>
-                </div>
-                <div class="hero__img-box">
-                    <img src="img/undraw_proud_coder_re_exuy.svg" alt="header image" class="hero__img">
-                </div>  
-            </div>
-        </section>
-
-        <section class="section-about" id="about">
-            <div class="section-about__container">
-                <div class="section-about__left">
-                    <h2 class="heading-secondary margin-bottom-small">About me</h2>
-                    <figure class="section-about__img-box">
-                        <img src="img/temp.JPG" alt="my avartar" class="section-about__avartar">
-                    </figure>
-                </div>
-                
-                <div class="section-about__right">
-                    <p class="sub-heading">A self-taught front-end developer</p>
-                    <p class="section-about__paragraph">A junior developer who is eager to start my journey as a web developer.</p>
-                    <p class="sub-heading">I am detail&mdash;oriented.</p>
-                    <p class="section-about__paragraph">
-                            I enjoy combining technology and visual aspects together to create digital products that are both user&mdash;friendly and beautifully looking.<br>
-                            I am also self&mdash;driven to keep my code clean and easy to maintain.        
-                    </p>
-                    <p class="sub-heading">I am a life&mdash;long learner.</p>
-                    <p class="section-about__paragraph">I cherish every opportunity to gain new knowledge.
-                            <br>
-                            Worked as a Project Manager before, I am good at time management have strong communication and organisation skills.
-                    </p>
-                    <a href="#" class="btn">Contact me</a>
-                </div>     
-            </div>
-            </section>
-
-        <section class="section-skills" id="skills">
-        <div class="container">
-                <div class="section-skills__wrapper">
-                <h2 class="heading-secondary margin-bottom-tiny">Skills & tools</h2>
-                <h2 class="sub-heading">My toolbox</h2>
-                <p class="sub-heading-small">Tools,skillsets and technologies I use to bring digital products to life:</p>
-                <div class="section-skills__icon-container">
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-html5"></use>
-                        </svg>
-                        <p>HTML5</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-css3"></use>
-                        </svg>
-                        <p>Css3</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-javascript"></use>
-                        </svg>
-                        <p>Javascript</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-sass"></use>
-                        </svg>
-                        <p>Sass</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-react"></use>
-                        </svg>
-                        <p>React</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-git"></use>
-                        </svg>
-                        <p>Git</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-github"></use>
-                        </svg>
-                        <p>github</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-terminal"></use>
-                        </svg>
-                        <p>terminal</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-node-dot-js"></use>
-                        </svg>
-                        <p>node</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-html5"></use>
-                        </svg>
-                        <p>NPM</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-bootstrap"></use>
-                        </svg>
-                        <p>bootstrap</p>
-                    </div>
-                    <div class="icon-box">
-                        <svg class="icon">
-                            <use href="img/sprite.svg#icon-jquery"></use>
-                        </svg>
-                        <p>jqurey</p>
-                    </div>
-                </div>
-                <h4 class="sub-heading">Currently learning and working on:</h4>
-                <p class="sub-heading-small">Improving my skills of vanilla JavaScript and React. Having fun with building apps with React. Keep learning data structure and algorithmn. </p>
-            </div>
+      <section class="section__hero">
+        <div class="hero">
+          <div class="hero__text-box">
+            <h1 class="heading-primary">Hello,I'm Effy!</h1>
+            <h1 class="heading-primary"><strong> A Web developer</strong></h1>
+            <h1 class="heading-primary">I love building things!</h1>
+          </div>
+          <div class="hero__img-box">
+            <img
+              src="img/undraw_proud_coder_re_exuy.svg"
+              alt="header image"
+              class="hero__img"
+            />
+          </div>
         </div>
-        </section>
+      </section>
 
-        <section class="section-projects" id="projects">
-            <div class="projects__wrapper container">
-                <div class="projects__heading">
-                <h2 class="heading-secondary margin-bottom-tiny">projects</h2>
-                <p class="sub-heading-small margin-bottom-small">Some selection of projects I built:</p>
+      <section class="section-about" id="about">
+        <div class="section-about__container">
+          <div class="section-about__left">
+            <h2 class="heading-secondary margin-bottom-small">About me</h2>
+            <figure class="section-about__img-box">
+              <img
+                src="img/temp.JPG"
+                alt="my avartar"
+                class="section-about__avartar"
+              />
+            </figure>
+          </div>
+
+          <div class="section-about__right">
+            <p class="sub-heading">A self-taught front-end developer</p>
+            <p class="section-about__paragraph">
+              A junior developer who is eager to start my journey as a web
+              developer.
+            </p>
+            <p class="sub-heading">I am detail&mdash;oriented.</p>
+            <p class="section-about__paragraph">
+              I enjoy combining technology and visual aspects together to create
+              digital products that are both user&mdash;friendly and beautifully
+              looking.<br />
+              I am also self&mdash;driven to keep my code clean and easy to
+              maintain.
+            </p>
+            <p class="sub-heading">I am a life&mdash;long learner.</p>
+            <p class="section-about__paragraph">
+              I cherish every opportunity to gain new knowledge.
+              <br />
+              Worked as a Project Manager before, I am good at time management
+              have strong communication and organisation skills.
+            </p>
+            <a href="#contact" class="btn" id="contactMe">Contact me</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-skills" id="skills">
+        <div class="container">
+          <div class="section-skills__wrapper">
+            <h2 class="heading-secondary margin-bottom-tiny">Skills & tools</h2>
+            <h2 class="sub-heading">My toolbox</h2>
+            <p class="sub-heading-small">
+              Tools,skillsets and technologies I use to bring digital products
+              to life:
+            </p>
+            <div class="section-skills__icon-container">
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-html5"></use>
+                </svg>
+                <p>HTML5</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-css3"></use>
+                </svg>
+                <p>Css3</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-javascript"></use>
+                </svg>
+                <p>Javascript</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-sass"></use>
+                </svg>
+                <p>Sass</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-react"></use>
+                </svg>
+                <p>React</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-git"></use>
+                </svg>
+                <p>Git</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-github"></use>
+                </svg>
+                <p>github</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-terminal"></use>
+                </svg>
+                <p>terminal</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-node-dot-js"></use>
+                </svg>
+                <p>node</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-html5"></use>
+                </svg>
+                <p>NPM</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-bootstrap"></use>
+                </svg>
+                <p>bootstrap</p>
+              </div>
+              <div class="icon-box">
+                <svg class="icon">
+                  <use href="img/sprite.svg#icon-jquery"></use>
+                </svg>
+                <p>jqurey</p>
+              </div>
             </div>
-                <div class="projects__container">
+            <h4 class="sub-heading">Currently learning and working on:</h4>
+            <p class="sub-heading-small">
+              Improving my skills of vanilla JavaScript and React. Having fun
+              with building apps with React. Keep learning data structure and
+              algorithmn.
+            </p>
+          </div>
+        </div>
+      </section>
 
-                    <!-- p1 -->
-                    <div class="project__photo-box">
-                        <img src="img/chinese.avif" alt="" class="project__img">
-                    </div>
-                    <div class="project__text-box">
-                        <p class="project__name">Chinese culture website</p>
-                        <p class="project__detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam expedita qui, obcaecati labore blanditiis in odit optio! Ratione officia ducimus sed explicabo. Aperiam voluptates, magnam expedita necessitatibus a odit?
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima animi, repellendus porro esse quisquam alias debitis fugit laborum sunt? Ex ut deleniti nihil minus! Architecto veniam aliquam nisi esse? Veniam.
-                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate ea repellat id omnis nihil ducimus, facilis unde, in ullam magni eligendi, molestiae dolores alias! Quos obcaecati cumque deleniti voluptates quasi?
-                        </p>
-                        <a href="#" class="btn">View it here</a>
-                        <a href="#" class="btn">View on github</a>
-                    </div>
-                    
-                    <!-- p2 -->
-                    <div class="project__text-box">
-                        <p class="project__name">Movie fight</p>
-                        <p class="project__detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam expedita qui, obcaecati labore blanditiis in odit optio! Ratione officia ducimus sed explicabo. Aperiam voluptates, magnam expedita necessitatibus a odit?</p>
-                        <a href="#" class="btn">View it here</a>
-                        <a href="#" class="btn">View on github</a>
-                    </div>    
-                    <div class="project__photo-box">
-                        <img src="img/journaling.avif" alt="" class="project__img">
-                    </div>
-                    
-                    <!-- p3 -->
-                    <div class="project__photo-box">
-                        <img src="img/camping.avif" alt="" class="project__img">
-                    </div>
-                    <div class="project__text-box">
-                        <p class="project__name">Food website</p>
-                        <p class="project__detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam expedita qui, obcaecati labore blanditiis in odit optio! Ratione officia ducimus sed explicabo. Aperiam voluptates, magnam expedita necessitatibus a odit?</p>
-                        <a href="#" class="btn">View it here</a>
-                        <a href="#" class="btn">View on github</a>
-                    </div>
-
-                    <!-- p4 -->                    
-                    <div class="project__text-box">
-                        <p class="project__name">Chinese culture website</p>
-                        <p class="project__detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam expedita qui, obcaecati labore blanditiis in odit optio! Ratione officia ducimus sed explicabo. Aperiam voluptates, magnam expedita necessitatibus a odit?</p>
-                        <a href="#" class="btn">View it here</a>
-                        <a href="#" class="btn">View on github</a>
-                    </div>
-                    <div class="project__photo-box">
-                        <img src="img/outdoor.avif" alt="" class="project__img">
-                    </div>
-
-                    <!-- p5 -->
-                    <div class="project__photo-box">
-                        <img src="img/acne.avif" alt="" class="project__img">
-                    </div>
-                    <div class="project__text-box">
-                        <p class="project__name">Chinese culture website</p>
-                        <p class="project__detail">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis quisquam expedita qui, obcaecati labore blanditiis in odit optio! Ratione officia ducimus sed explicabo. Aperiam voluptates, magnam expedita necessitatibus a odit?</p>
-                        <a href="#" class="btn">View it here</a>
-                        <a href="#" class="btn">View on github</a>
-                    </div>
-                </div>
+      <section class="section-projects" id="projects">
+        <div class="projects__wrapper container">
+          <div class="projects__heading">
+            <h2 class="heading-secondary margin-bottom-tiny">projects</h2>
+            <p class="sub-heading-small margin-bottom-small">
+              Some selection of projects I built:
+            </p>
+          </div>
+          <div class="projects__container">
+            <!-- p1 -->
+            <div class="project__photo-box">
+              <img src="img/chinese.avif" alt="" class="project__img" />
             </div>
-        </section>
-
-        <section class="section-contact" id="contact">
-            <div class="container">
-                <div class="contact">
-                <div class="contact-text-box">
-                    <h2 class="heading-secondary margin-bottom-tiny">Get in touch!</h2>
-                    <p class="contact-text margin-bottom-tiny">
-                        Dropping a line to say g’day, ask for my resume or see if we can build something amazing together? I’d love to hear from you!
-                    </p>
-                    <p class="contact-text margin-bottom-small">
-                        Fill in your info in the form below and I look forward to hearing from you!
-                    </p>
-                    <form 
-                   class="contact-form" name="contact-form" netlify>
-                    <div>
-                        <label for="name">Full Name:</label>
-                        <input name="fullname" type="text" class="name" id="name" placeholder="fullname" required>
-                    </div>
-                    <div>
-                        <label for="email">Email address:</label>
-                        <input name="email" type="email" class="email" id="email" placeholder="name@email.com" required>
-                    </div>
-                    <div>
-                        <label for="message">What's on your mind?</label>
-                        <input type="textbox" name="contact-message" type="text" class="message" id="message" placeholder="Leave me some message" required >
-                    </div>
-    
-                    <button class="btn contact-button" >Say hi!</button>
-                    </form>
-                </div>
-                <div class="contact-img-box" role="image" aria-label="A woman enjoy food"></div>
-                </div>
+            <div class="project__text-box">
+              <p class="project__name">Chinese culture website</p>
+              <p class="project__detail">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quisquam expedita qui, obcaecati labore blanditiis in
+                odit optio! Ratione officia ducimus sed explicabo. Aperiam
+                voluptates, magnam expedita necessitatibus a odit? Lorem ipsum
+                dolor sit amet consectetur adipisicing elit. Minima animi,
+                repellendus porro esse quisquam alias debitis fugit laborum
+                sunt? Ex ut deleniti nihil minus! Architecto veniam aliquam nisi
+                esse? Veniam. Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Voluptate ea repellat id omnis nihil ducimus,
+                facilis unde, in ullam magni eligendi, molestiae dolores alias!
+                Quos obcaecati cumque deleniti voluptates quasi?
+              </p>
+              <a href="#" class="btn">View it here</a>
+              <a href="#" class="btn">View on github</a>
             </div>
-        </section>
+
+            <!-- p2 -->
+            <div class="project__text-box">
+              <p class="project__name">Movie fight</p>
+              <p class="project__detail">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quisquam expedita qui, obcaecati labore blanditiis in
+                odit optio! Ratione officia ducimus sed explicabo. Aperiam
+                voluptates, magnam expedita necessitatibus a odit?
+              </p>
+              <a href="#" class="btn">View it here</a>
+              <a href="#" class="btn">View on github</a>
+            </div>
+            <div class="project__photo-box">
+              <img src="img/journaling.avif" alt="" class="project__img" />
+            </div>
+
+            <!-- p3 -->
+            <div class="project__photo-box">
+              <img src="img/camping.avif" alt="" class="project__img" />
+            </div>
+            <div class="project__text-box">
+              <p class="project__name">Food website</p>
+              <p class="project__detail">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quisquam expedita qui, obcaecati labore blanditiis in
+                odit optio! Ratione officia ducimus sed explicabo. Aperiam
+                voluptates, magnam expedita necessitatibus a odit?
+              </p>
+              <a href="#" class="btn">View it here</a>
+              <a href="#" class="btn">View on github</a>
+            </div>
+
+            <!-- p4 -->
+            <div class="project__text-box">
+              <p class="project__name">Chinese culture website</p>
+              <p class="project__detail">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Officiis quisquam expedita qui, obcaecati labore blanditiis in
+                odit optio! Ratione officia ducimus sed explicabo. Aperiam
+                voluptates, magnam expedita necessitatibus a odit?
+              </p>
+              <a href="#" class="btn">View it here</a>
+              <a href="#" class="btn">View on github</a>
+            </div>
+            <div class="project__photo-box">
+              <img src="img/outdoor.avif" alt="" class="project__img" />
+            </div>
+
+            <!-- p5 -->
+            <div class="project__photo-box">
+              <img src="img/forkify.jpg" alt="" class="Forkify_project_img" />
+            </div>
+            <div class="project__text-box">
+              <p class="project__name">Forkify recipe website</p>
+              <p class="project__detail">
+                In this project, I learned the MVC Architecture. Ways to loading
+                recipe from API also upload data to API.
+              </p>
+
+              <a href="https://effyforkify.netlify.app/" class="btn"
+                >View it here</a
+              >
+
+              <a href="https://github.com/Effyz1228/forkify" class="btn"
+                >View on github</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-contact" id="contact">
+        <div class="container">
+          <div class="contact">
+            <div class="contact-text-box">
+              <h2 class="heading-secondary margin-bottom-tiny">
+                Get in touch!
+              </h2>
+              <p class="contact-text margin-bottom-tiny">
+                Dropping a line to say g’day, ask for my resume or see if we can
+                build something amazing together? I’d love to hear from you!
+              </p>
+              <p class="contact-text margin-bottom-small">
+                Fill in your info in the form below and I look forward to
+                hearing from you!
+              </p>
+              <form class="contact-form" name="contact-form" netlify>
+                <div>
+                  <label for="name">Full Name:</label>
+                  <input
+                    name="fullname"
+                    type="text"
+                    class="name"
+                    id="name"
+                    placeholder="fullname"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Email address:</label>
+                  <input
+                    name="email"
+                    type="email"
+                    class="email"
+                    id="email"
+                    placeholder="name@email.com"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="message">What's on your mind?</label>
+                  <input
+                    type="textbox"
+                    name="contact-message"
+                    type="text"
+                    class="message"
+                    id="message"
+                    placeholder="Leave me some message"
+                    required
+                  />
+                </div>
+
+                <button class="btn contact-button">Say hi!</button>
+              </form>
+            </div>
+            <div
+              class="contact-img-box"
+              role="image"
+              aria-label="A woman enjoy food"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
     <footer>
-        <p class="footer">Copyright &copy; <span class="year">3000</span> | Designed & coded with ♥️ by Effy Zhang</p>
+      <p class="footer">
+        Copyright &copy; <span class="year">3000</span> | Designed & coded with
+        ♥️ by Effy Zhang
+      </p>
     </footer>
 
     <script src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
     <script src="app.js"></script>
-</body>
+  </body>
 </html>

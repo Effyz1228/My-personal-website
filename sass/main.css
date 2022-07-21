@@ -808,6 +808,10 @@ Instead 1rem =1em =16px */
   .hero__img {
     width: 80%;
   }
+  .section-about__avartar {
+    height: 25rem;
+    width: 25rem;
+  }
   .section-skills__wrapper {
     padding-top: 34rem;
   }
@@ -816,6 +820,11 @@ Instead 1rem =1em =16px */
     display: grid;
     -ms-grid-columns: (1fr)[4];
         grid-template-columns: repeat(4, 1fr);
+  }
+  .section-projects .btn,
+  .section-projects .btn:link,
+  .section-projects .btn:visited {
+    margin-bottom: 1rem;
   }
   .contact {
     margin: 0;
