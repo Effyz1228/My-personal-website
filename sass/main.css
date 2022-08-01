@@ -71,7 +71,7 @@ body {
   text-decoration: none;
   font-size: 2rem;
   font-weight: 600;
-  padding: 1.6rem 3.2rem;
+  padding: 1rem 2rem;
   -ms-flex-item-align: start;
       -ms-grid-row-align: start;
       align-self: start;
@@ -98,7 +98,7 @@ strong {
 .heading-primary {
   font-size: 5.2rem;
   line-height: 1.6;
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
   color: #fff;
   font-weight: 700;
 }
@@ -128,7 +128,7 @@ strong {
 
 .btn-mobile-nav {
   border: none;
-  background: #AA96DA;
+  background: #aa96da;
   cursor: pointer;
   border-radius: 50%;
   height: 6.5rem;
@@ -203,7 +203,7 @@ strong {
 
 .header {
   position: relative;
-  background-color: #AA96DA;
+  background-color: #aa96da;
   top: 0;
   bottom: 0;
   z-index: 999;
@@ -214,7 +214,7 @@ strong {
 .section__hero {
   z-index: 99;
   position: relative;
-  background-color: #A8D8EA;
+  background-color: #a8d8ea;
   -webkit-clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
           clip-path: polygon(0 0, 100% 0%, 100% 85%, 0% 100%);
   padding: 9.6rem 4.8rem 4.8rem 4.8rem;
@@ -266,7 +266,7 @@ strong {
   position: relative;
   -webkit-clip-path: polygon(100% 0, 100% 78%, 62% 100%, 0 83%, 0 0);
           clip-path: polygon(100% 0, 100% 78%, 62% 100%, 0 83%, 0 0);
-  background-color: #FCBAD3;
+  background-color: #fcbad3;
   margin-top: -13rem;
   z-index: 88;
 }
@@ -345,7 +345,7 @@ strong {
 
 .section-skills {
   margin-top: -21rem;
-  background-color: #FFFFD2;
+  background-color: #ffffd2;
 }
 
 .section-skills__wrapper {
@@ -391,7 +391,15 @@ strong {
   color: #333;
   font-weight: 600;
   font-size: 2.4rem;
-  margin-bottom: 2.4rem;
+  margin-bottom: 2rem;
+}
+
+.project__tool {
+  font-size: 1.2rem;
+  border: 1px #555 solid;
+  border-radius: 4px;
+  padding: 0.5rem;
+  color: #333;
 }
 
 .project__detail {
@@ -399,7 +407,8 @@ strong {
   font-weight: 700;
   font-size: 1.8rem;
   line-height: 1.8;
-  padding-bottom: 4.8rem;
+  padding-bottom: 3.2rem;
+  margin-top: 1.6rem;
 }
 
 .section-contact {
@@ -511,7 +520,7 @@ strong {
 }
 
 footer {
-  background-color: #FCBAD3;
+  background-color: #fcbad3;
 }
 
 footer p {
